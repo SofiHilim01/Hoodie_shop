@@ -16,5 +16,18 @@ nav a {
     text-decoration: none;
 }
 main {
+    @keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: floating 3s infinite ease-in-out;
+}
+
     padding: 20px;
 }
